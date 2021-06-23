@@ -1,6 +1,4 @@
-
-
-let id = 1;
+var id = 1;
 
 function addTodo() {
 
@@ -45,6 +43,7 @@ function addTodo() {
   editBtn.appendChild(editIcon)
   userInput.value = ""
   id++;
+  //
 
 }
 
@@ -68,8 +67,8 @@ x.remove()
 }
 
 function edit(){
-  let parentDiv= this.parentElement
-  let pTag=parentDiv.parentElement.childNodes[0]
+  var  parentDiv= this.parentElement
+  var pTag=parentDiv.parentElement.childNodes[0]
   y=prompt("Enter String To Update")
   pTag.innerHTML=y;
 }
